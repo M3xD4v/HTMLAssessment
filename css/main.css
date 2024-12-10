@@ -1,0 +1,39 @@
+:root {
+    --primary: #141414;
+    --secondary: #080808;
+    --accent: #2149e9;
+    --text-accent: #ffcc00;
+    --gray: rgba(255, 255, 255, 0.7);
+    --card: rgba(16, 16, 16, 0.333);
+    --hamburger-speed: 22.1;
+}
+
+
+.title {
+    font-size: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease;
+    padding: 2rem;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    font-family: sans-serif;
+  }
+.title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2rem;
+    transform: translateZ(-10px);
+    color: rgba(255,255,255,0.1);
+    -webkit-text-fill-color: rgba(255,255,255,0.1);
+  }
+
+  .Dcontainer {
+    perspective: 1000px;
+  }
